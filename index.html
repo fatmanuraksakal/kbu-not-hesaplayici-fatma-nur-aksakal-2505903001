@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KBÜ Not Hesaplayıcı</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <img src="logo.png" alt="KBÜ Logo">
+    <h1>Karabük Üniversitesi</h1>
+  </nav>
+
+  <main class="container">
+    <header>
+      <h2>Not Hesaplayıcı</h2>
+      <p>Dönemsel olarak vize, final, bütünleme sonuçlarınıza göre ders başarı notunuzu ve harf notunuzu hesaplar.</p>
+    </header>
+
+    <form>
+      <div class="form">
+        <label>Yıl İçi (Vize):</label>
+        <input type="number" id="vize" min="0" max="100" />
+
+        <label>Yıl İçi Çalışma (Opsiyonel):</label>
+        <input type="number" id="yilici" min="0" max="100" placeholder="Boş bırakabilirsiniz."/>
+
+        <label>Final:</label>
+        <input type="number" id="final" min="0" max="100" />
+
+        <label>Bütünleme (Opsiyonel):</label>
+        <input type="number" id="but" min="0" max="100" placeholder="Final notunuz yerine geçer."/>
+
+        <label>
+          <input type="checkbox" id="devamsiz"> Devamsızım
+        </label>
+
+        <div>
+          <label>Sınava girdiniz mi?</label>
+          <select id="sinavaGirdim">
+            <option value="evet">Evet</option>
+            <option value="hayir">Hayır</option>
+          </select>
+        </div>
+
+        <button type="button" onclick="hesapla()">Hesapla</button>
+        <button type="button" onclick="sifirla()">Sıfırla</button>
+      </div>
+
+      <div id="sonuc" class="card">
+        <h2>Sonuç</h2>
+        <p id="basari">Başarı Notu: - </p>
+        <p id="harf">Harf Notu: - </p>
+        <p id="durum">Durum: - </p>
+        <p id="aciklama">Açıklama: - </p>
+      </div>
+    </form>
+  </main>
+
+  <footer>
+    <h3>© 2025 KBÜ Not Hesaplayıcı. Tüm hakları saklıdır.</h3>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -82,7 +82,7 @@ Kodlar sade ve eğitim amaçlıdır.
 ---
 
 ## 📦 Canlı Demo
-🔗 [GitHub Pages Üzerinde Görüntüle](https://kullaniciadi.github.io/kbu-not-hesaplayici-nuraksakal/)
+🔗 [GitHub Pages Üzerinde Görüntüle](https://fatmanuraksakal.github.io/kbu-not-hesaplayici-fatma-nur-aksakal-2505903001/)
 
 ---
 
